@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS selectors</title>
+        <style>
+            /*style the body*/
+            body {
+                background-color: brown;
+            }
+
+            /*style every h1*/
+            h1 {
+                color: green;
+            }
+            
+            /*style a specific id using #*/
+            h2#first-heading {
+                color: red;
+            }
+
+            /*style a specific class using .*/
+            h2.second-heading {
+                color: white;
+            }
+
+            #welcome {
+                background-color: chartreuse;
+            }
+
+            /*multiple selectors*/
+            #welcome, #about {
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+
+            /*nested selector*/
+            #welcome p {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="welcome">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Laboriosam eum ad maxime veritatis quae ipsum facere libero, 
+                voluptates nobis sint nulla aliquam cum unde, 
+                recusandae et rem eos laudantium ex!
+            </p>
+        </div>
+        <div id="about">
+            <h2 id="first-heading">About Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Recusandae libero et numquam possimus eos veritatis enim minima, 
+                eligendi cum iusto laboriosam obcaecati quia rerum necessitatibus 
+                repudiandae illum eius alias cupiditate!
+            </p>
+        </div>
+        <div>
+            <h2 class="second-heading">Contact</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Recusandae libero et numquam possimus eos veritatis enim minima, 
+            eligendi cum iusto laboriosam obcaecati quia rerum necessitatibus 
+            repudiandae illum eius alias cupiditate!
+            </p>
+        </div>
+    </body>
+</html>

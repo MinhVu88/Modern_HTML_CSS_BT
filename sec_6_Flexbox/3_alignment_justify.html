@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 6 | Intro To Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-container {
+            background: crimson;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            /* Y/cross/vertical axis align */
+            align-items: center;
+            /* X/main/horizontal axis align */
+            justify-content: center;
+        }
+
+        .item {
+            background: #f4f4f4;
+            /* flex: 1; */
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .i-1 {
+            align-self: flex-start;
+        }
+
+        .i-3 {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Section 6 - Intro To Flexbox | Part 3: Flexbox Alignment & Justify</h1>
+    <div class="flex-container">
+        <div class="item i-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item i-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item i-3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+</body>
+
+</html>

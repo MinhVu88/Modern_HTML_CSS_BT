@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name="description" content="This is my website description">
+		<meta name="keywords" content="Web development, back-end programming">
+		
+		<!-- don't index page
+		<meta name="robots" content="NOINDEX, NOFOLLOW">
+		-->
+		<title>My Website v0.0</title>
+		
+		<style type="text/css">
+			.card {
+				border: 1px solid #ccc;
+				background: #f4f4f4;
+				padding: 20 px;
+				margin-bottom: 20px;
+			}
+			
+			.enhance {
+				color: yellow;
+				background-color: black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!-- this is a comment -->
+		<h1>Welcome to my website</h1>
+		<p>This is my very 1st website</p>
+		
+		<!-- headings -->
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+		
+		<!-- paragraph -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+			<hr> 
+			<strong>Obcaecati voluptas pariatur non sint voluptatum, veniam,</strong><br> 
+			<em>quas possimus repudiandae numquam est nesciunt,</em><br>
+			<hr> 
+			<del>tempore dolore saepe nemo nihil dolorum eaque impedit dolores.</del>
+		</p>
+		
+		<!-- external links -->
+		<p> <a href="https://en.wikipedia.org/wiki/Tool_(band)"> Tool </a> </p>
+		
+		<p> <a href="https://en.wikipedia.org/wiki/Alice_in_Chains" target="_blank"> Alice In Chains </a> </p>
+		
+		<!-- internal links -->
+		<p> <a href="internal_link.html"> Click this internal link </a> </p>
+		
+		<!-- local image -->
+		<img alt="My local pic" src="img/sample.jpg" width="200">
+		
+		<!-- remote image -->
+		<img alt="My remote pic" src="https://source.unsplash.com/200x200/?nature,water">
+		
+		<!-- unordered lists -->
+		<ul>
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+		</ul>
+		
+		<!-- ordered lists -->
+		<ol>
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+		</ol>
+		
+		<ol type="A">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+		</ol>
+		
+		<ol type="a">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+		</ol>
+		
+		<ol type="I">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+		</ol>
+		
+		<ol type="i">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+			<li>item 4</li>
+		</ol>
+		
+		<!-- nested lists -->
+		<ul>
+			<li>item 5</li>
+			<li>item 6</li>
+			<li>item 7
+				<ul>
+					<li>nested item 7.1</li>
+					<li>nested item 7.2</li>
+				</ul>
+			</li>
+			<li>item 8</li>
+		</ul>
+		
+		<!-- tables -->
+		<table style="width: 600px">
+			<thead>
+				<tr>
+					<th>First name</th>
+					<th>Last name</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@anon.com</td>
+				</tr>
+				
+				<tr>
+					<td>Jane</td>
+					<td>Doe</td>
+					<td>jane@anon.com</td>
+				</tr>
+				
+				<tr>
+					<td>Jake</td>
+					<td>Doe</td>
+					<td>jake@anon.com</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<br>
+		
+		<!-- forms & input -->
+		<form action="process.php">
+			<!-- text input -->
+			<div>
+				<label for="name">Name</label><br>
+				<input type="text" id="name" name="name" value="John Doe">
+			</div>
+			
+			<!-- email input -->
+			<div>
+				<label for="email">Email</label><br>
+				<input type="email" id="email" name="email">
+			</div>
+			
+			<!-- textarea input -->
+			<div>
+				<label for="message">Message</label><br>
+				<textarea name="message" id="message" rows="5" cols="50" placeholder="It's not the money, it's about sending a message"></textarea>
+			</div>
+			
+			<!-- select input -->
+			<div>
+				<label for="sex">Sex</label>
+				<select name="sex" id="sex">
+					<option value="male">Male</option>
+					<option value="female" selected="selected">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			
+			<!-- number input -->
+			<div>
+				<label for="age">Age</label><br>
+				<input type="number" name="age" id="age">
+			</div>
+			
+			<!-- date input -->
+			<div>
+				<label for="dob">Birthday</label><br>
+				<input type="date" name="dob" id="dob">
+			</div>
+			
+			<!-- radio input (1 choice only) -->
+			<div>
+				<label for="member">Membership</label>
+				<input type="radio" value="simple" name="member" id="member"> Simple
+				<input type="radio" value="standard" name="member" id="member" checked="checked"> Standard
+				<input type="radio" value="super" name="member" id="member"> Super
+			</div>
+			
+			<!-- checkbox input (multiple choices) -->
+			<div>
+				<label for="likes">Hobbies</label>
+				<input type="checkbox" value="computer" name="likes" id="likes"> Computers
+				<input type="checkbox" value="music" name="likes" id="likes"> Music
+				<input type="checkbox" value="space" name="likes" id="likes"> Space
+				<input type="checkbox" value="psychology" name="likes" id="likes"> Psychology
+				<input type="checkbox" value="sociology" name="likes" id="likes"> Sociology
+				<input type="checkbox" value="movie" name="likes" id="likes"> Movies
+				<input type="checkbox" value="drug" name="likes" id="likes"> Recreational drugs
+			</div>
+			
+			<!-- a submit button & a reset button -->
+			<input type="submit" value="Submit" id="button-1"/>
+			
+			<button type="reset">Reset</button>
+		</form>
+		
+		<!-- inline elements vs block elements -->
+		<p style="border: 2px green solid">
+			A paragraph is a block-level element whose width spans across a page<br><br>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+			Excepturi architecto quos esse ut <strong>dolores</strong> omnis quasi at in, nobis, expedita<br> 
+			consequatur velit sint provident iste blanditiis voluptatum cum pariatur corporis ad.<br> 
+			Quasi nesciunt quod minima! Architecto commodi vel recusandae blanditiis.
+		</p>
+		
+		<p style="border: 2px green solid">
+			Another block-level element<br><br>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+			Dicta voluptatem magnam odio beatae cumque architecto tempore aliquam nobis repudiandae voluptatum.
+		</p>
+		
+		<a href="#" style="border: 2px red solid">The "a" tag is an inline-level element</a>
+		
+		<a href="#" style="border: 2px red solid">Another inline-level element</a>
+		
+		<ul>
+			<li>The "ul" & "li" tags are block-level elements</li>
+			<li>Another block-level element</li>
+		</ul>
+		
+		<!-- div (a block-level element), span (an inline-level element), class & id -->
+		<div id="main-header" class="card">
+			<h1>My website</h1>
+			<p>A site about me</p>
+		</div>
+		
+		<ul id="main-nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		
+		<div id="about" class="card">
+			<h3>About</h3>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> 
+				Minus, <div class="enhance">nemo perspiciatis quam sint ducimus voluptatum</div> dolorem<br> 
+				necessitatibus saepe dolorum suscipit fugiat doloribus commodi qui<br> 
+				eligendi <span class="enhance">id veniam quia iste eum, molestias facere impedit</span> recusandae!<br> 
+				Culpa fuga eveniet distinctio voluptas.
+			</p>
+		</div>
+		
+		<div id="contact" class="card">
+			<h3>Contact Info</h3>
+			<ul>
+				<li>Address: Main st, Boston, MA</li>
+				<li>Phone: (555) 555-5555</li>
+				<li>Email: me@something.com</li>
+			</ul>
+		</div>
+		
+		<div id="footer">
+			<p>Copyright &copy; 2019</p>
+		</div>
+		
+		<!-- entities -->
+		<!-- non breaking space -->
+		<p>Hello, my name is &nbsp; &nbsp; &nbsp; Maynard</p>
+		
+		<!-- greater than & less than symbols -->
+		<p>7 &gt; 4</p>
+		<p>4 &lt; 7</p>
+		<p>8 &#62; 5</p>
+		<p>5 &#60; 8</p>
+		
+		<!-- copyright & trademark -->
+		<p>&copy;</p>
+		<p>&reg;</p>
+		
+		<!-- currency -->
+		<p>&cent;</p>
+		<p>&pound;</p>
+		<p>&yen;</p>
+		<p>&euro;</p>
+		
+		<!-- suits -->
+		<p>&spades;</p>
+		<p>&clubs;</p>
+		<p>&hearts;</p>
+		<p>&diams;</p>
+		
+		<!-- computer code -->
+		<code>
+			&lt;?php echo 'Hello' ?&gt;
+		</code>
+		
+		<p>Save the file by pressing <kbd>CTRL + S</kbd></p>
+		
+	</body>
+</html>
