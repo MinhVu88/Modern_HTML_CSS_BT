@@ -51,6 +51,7 @@ img {
   position: fixed;
   top: 0px;
   padding: 0 30px;
+  transition: 0.5s;
 }
 
 .navbar a {
@@ -71,9 +72,14 @@ img {
   font-weight: 400;
 }
 
-/* header | index.html */
+.navbar.top {
+  background: transparent;
+}
+
+/* header | hero class | index.html */
 .hero * {
   /* push the content in front of the overlay */
+  /* the higher z-index is, the closer to the screen the element is */
   z-index: 10;
 }
 
@@ -104,7 +110,7 @@ img {
   margin: 20px 0 30px;
 }
 
-/* overlay effect for the hero img */
+/* overlay effect for the hero img in index.html */
 /* using content-related pseudo elements such as "before" & "after" */
 .hero::before {
   content: "";
@@ -116,4 +122,141 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+}
+
+/* icons class | main | index.html */
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* cases class | main | index.html */
+.cases img:hover {
+  opacity: 0.7;
+}
+
+.team img {
+  border-radius: 50%;
+}
+
+/* callback-form class | main | index.html */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+}
+
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* header | hero & blog classes | blog.html */
+.hero.blog {
+  background: url("../img/home/blog.jpg") no-repeat center center/cover;
+  height: 30vh;
+}
+
+/* post.html */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* footer | all pages */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #28a745;
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}
+
+/* under-768px styles (for a tablet or less) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-cols .col,
+  .flex-grid .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
 }

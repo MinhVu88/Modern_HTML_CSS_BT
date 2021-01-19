@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- style.css is after util.css as util styling may be overwritten in style.css -->
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Post #1</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blogs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Blogs</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog #1</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | Jan 19 2021
+            </p>
+            <img src="img/blog/blog1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum ex sint mollitia.
+                Deserunt delectus, numquam accusamus culpa laudantium eaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, odio impedit, ducimus expedita
+                iure nesciunt consectetur officia commodi consequatur minima vel nihil! Dolor eos officiis, repudiandae
+                tempore unde architecto praesentium soluta blanditiis voluptatibus distinctio facere in atque excepturi,
+                tempora omnis nulla! Odit quod aspernatur quidem, quo impedit ad quibusdam sapiente voluptates nostrum
+                quos repellendus, voluptatem amet illum maiores laudantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam inventore nam odit ad nostrum
+                quas hic, a cum officiis porro expedita quidem ea praesentium? Distinctio dolorem repudiandae rem,
+                tenetur velit alias, porro reprehenderit ullam eos odio nam ea adipisci nemo exercitationem. Quod ipsum
+                voluptate nostrum ducimus quis sed eius.</p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2021 - EdgeLedger</p>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('#navbar');
+        let scrolled = false;
+
+        window.onscroll = () => {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+
+                setTimeout(() => {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>
